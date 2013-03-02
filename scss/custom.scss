@@ -1,5 +1,32 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700,900);
+@import url(http://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+
+@import "ColorMeSASS";
+
+// Sass Variables - TYPOGRAPHY
+$heading-font: Roboto,Helvetica, Arial, sans-serif;
+
+
+// Sass Variables - COLORS
+$base-color: $yellow;
+$h1-color: $yellowDarker;
+$h3-color: $yellowDull;
+
+$gray: $grayCool;
+
+// Sass Mixins
+@mixin h1-font {
+	font-family: Roboto,Helvetica, Arial, sans-serif;
+	font-weight:100;
+	color:$h1-color;
+}
+
+@mixin h3-font {
+	font-family: Roboto,Helvetica, Arial, sans-serif;
+	font-size: 1.6em;
+	font-weight:200;
+	color:$h3-color;
+}
 
 html { height: 100%; }
 
@@ -14,13 +41,15 @@ html { height: 100%; }
 }
 
 body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-family: Calibri, Arial, sans-serif;
 	background: #fff;
 	font-weight: 400;
-	font-size: 100%;
+	font-size: 14px;
 	color: #333;
 	height: 100%;
 }
+
+p {font-family: Sanchez, serif; }
 
 .js body {
 	overflow: hidden;
@@ -225,14 +254,19 @@ a:hover {
 }
 
 .content h1 {
-	font-weight: 300;
+	@include h1-font;
+	font-weight: 100;
 	font-size: 4em;
 	padding: 0 0 10px;
-	color: #333;
 	margin: 0 1% 40px;
 	text-align: left;
 	box-shadow: 0 10px 0 rgba(0,0,0,0.02);
 	text-shadow: 0 0 2px #fff;
+}
+
+.content h3 {
+	@include h3-font;
+	margin: 0 1% 40px;
 }
 
 .no-js .content h1 {
@@ -243,7 +277,7 @@ a:hover {
 	font-size: 1.2em;
 	line-height: 1.6;
 	font-weight: 300;
-	padding: 5px 8%;
+	padding: .5em 8%;
 	text-align: justify;
 }
 
