@@ -136,7 +136,7 @@ a:hover {
 	padding: 0 20px;
 	cursor: pointer;
 	background: $menuBackgroundColor;
-	border-bottom: 1px solid $greenOlive;
+	border-bottom: 1px solid lighten($greenOlive,20);
 }
 
 .menu-toc li a:hover,
@@ -307,4 +307,4 @@ a:hover {
 	}
 }
 
-.addthis_toolbox {margin:0 20px;}
+.addthis_toolbox {margin:0 17px;}
