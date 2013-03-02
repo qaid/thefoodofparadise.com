@@ -1,31 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700,900);
-@import url(http://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 
 @import "ColorMeSASS";
 
 // Sass Variables - TYPOGRAPHY
-$heading-font: Roboto,Helvetica, Arial, sans-serif;
+$headingFont: Roboto,Helvetica, Arial, sans-serif;
+$bodyFont: Merriweather, Georgia, serif;
 
 
 // Sass Variables - COLORS
-$base-color: $yellow;
-$h1-color: $yellowDarker;
-$h3-color: $yellowDull;
+$baseColor: $yellow;
+$green: $greenAsparagus;
+$greenHighlight: lighten($greenAsparagus, 20);
+$h1Color: $yellowDarker;
+$h3Color: $yellowDull;
+$menuBackgroundColor: $green;
 
 $gray: $grayCool;
 
 // Sass Mixins
+@mixin body-font {
+	font-family: Merriweather, Georgia, serif;
+	font-weight:400;
+}
+
 @mixin h1-font {
 	font-family: Roboto,Helvetica, Arial, sans-serif;
 	font-weight:100;
-	color:$h1-color;
+	color:$h1Color;
 }
 
 @mixin h3-font {
 	font-family: Roboto,Helvetica, Arial, sans-serif;
-	font-size: 1.6em;
+	font-size: 1.7em;
 	font-weight:200;
-	color:$h3-color;
+	color:$h3Color;
 }
 
 html { height: 100%; }
@@ -41,7 +50,6 @@ html { height: 100%; }
 }
 
 body {
-	font-family: Calibri, Arial, sans-serif;
 	background: #fff;
 	font-weight: 400;
 	font-size: 14px;
@@ -49,7 +57,7 @@ body {
 	height: 100%;
 }
 
-p {font-family: Sanchez, serif; }
+p {@include body-font;}
 
 .js body {
 	overflow: hidden;
@@ -89,7 +97,7 @@ a:hover {
 }
 
 .menu-panel {
-	background: #f1103a;
+	background: $green;
 	width: 240px;
 	height: 100%;
 	position: fixed;
@@ -97,6 +105,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	overflow:scroll;
 }
 
 .js .menu-panel {
@@ -106,6 +115,7 @@ a:hover {
 
 .menu-panel h3 {
 	font-size: 1.8em;
+	font-family: $headingFont;
 	padding: 20px;
 	font-weight: 300;
 	color: #fff;
@@ -119,42 +129,38 @@ a:hover {
 .menu-toc li a {
 	display: block;
 	color: #fff;
-	font-size: 1.1em;
+	font-family: $headingFont;
+	font-size: 1.2em;
+	font-weight:100;
 	line-height: 3.5;
 	padding: 0 20px;
 	cursor: pointer;
-	background: #f1103a;
-	border-bottom: 1px solid #dd1338;
+	background: $menuBackgroundColor;
+	border-bottom: 1px solid $greenOlive;
 }
 
 .menu-toc li a:hover,
 .menu-toc li.menu-toc-current a{
-	background: #dd1338;
+	background: $greenHighlight;
 }
 
 .menu-panel div {
 	margin-top: 20px;
 }
 
-.menu-panel div p {color:#FFA61B; margin:0 20px;}
+.menu-panel div p {
+	color:lighten($greenHighlight, 10); 
+	margin:1.5em 20px;
+	font-family: $headingFont;
+	font-weight:100;
+}
 
 .menu-panel div a {
-	text-transform: uppercase;
-	font-size: 0.7em;
-	line-height: 1;
-	padding: 5px 20px;
-	display: block;
-	border: none;
-	color: #bc0b0b;
-	letter-spacing: 1px;
-	font-weight: 800;
-	text-shadow: 0 1px rgba(255,255,255,0.2);
+	color: white;
 } 
 
 .menu-panel div a:hover {
-	background: inherit;
-	color: #fff;
-	text-shadow: none;
+	color: $baseColor;
 }
 
 .bb-custom-wrapper nav {
@@ -171,7 +177,7 @@ a:hover {
 	height: 32px;
 	top: 0;
 	left: 0;
-	background: #f1103a;
+	background: $green;
 	border-radius: 50%;
 	color: #fff;
 	line-height: 30px;
@@ -183,7 +189,7 @@ a:hover {
 
 .bb-custom-wrapper nav span:hover,
 .menu-button:hover {
-	background: #000;
+	background: $greenHighlight;
 }
 
 .bb-custom-wrapper nav span:last-child {
@@ -258,7 +264,7 @@ a:hover {
 	font-weight: 100;
 	font-size: 4em;
 	padding: 0 0 10px;
-	margin: 0 1% 40px;
+	margin: 0 1% 20px;
 	text-align: left;
 	box-shadow: 0 10px 0 rgba(0,0,0,0.02);
 	text-shadow: 0 0 2px #fff;
@@ -280,6 +286,9 @@ a:hover {
 	padding: .5em 8%;
 	text-align: justify;
 }
+
+.content a {color:$yellowDark;}
+.content a:hover {color:$yellowDull;}
 
 @media screen and (max-width: 800px){
 	.no-js .menu-panel {
