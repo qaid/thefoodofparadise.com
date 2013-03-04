@@ -11,10 +11,11 @@ Like most people who live a life, I've got one or two interesting stories about 
 The effort turned into a major effort of literary creativity, which I have decided to extend into the realm of visual design.
 
 ## CoDrops Are The Bizness
-The design approach of this website was inspired by the tutorial at [Tympanus.net's Codrops site] [2]. All respect due.
+The design approach of this website was inspired by the tutorial at [Tympanus.net's Codrops site] [2], which uses the dope [BookBlock plugin repo'd here on Github] [3]. All respect due.
 
 [1]: http://qaidjacobs.com/the-food-of-paradise/
 [2]: http://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/
+[3]: https://github.com/codrops/BookBlock
 
 ## To Do
 1. Implement column splitting when media width exceeds certain amount. (Imagine trying to read this thing fullscreen on a 20+ inch monitor.) 
