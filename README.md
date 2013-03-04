@@ -10,8 +10,12 @@ Like most people who live a life, I've got one or two interesting stories about 
 
 The effort turned into a major effort of literary creativity, which I have decided to extend into the realm of visual design.
 
-## CodDrops Are The Bizness
+## CoDrops Are The Bizness
 The design approach of this website was inspired by the tutorial at [Tympanus.net's Codrops site] [2]. All respect due.
 
 [1]: http://qaidjacobs.com/the-food-of-paradise/
 [2]: http://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/
+
+## To Do
+1. Implement column splitting when media width exceeds certain amount. (Imagine trying to read this thing fullscreen on a 20+ inch monitor.) 
+2. When Table of contents are viewed, reduce width of text displayed so that all of it is still visible.
