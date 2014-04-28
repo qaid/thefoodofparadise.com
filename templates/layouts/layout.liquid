@@ -1,54 +1,12 @@
 <!doctype html>
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="The Food of Paradise, an ancient Sufi tale retold in rhyme by Qa'id Jacobs" />
-        <meta name="author" content="Qa'id Jacobs" />
-        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    {% include "structure/head" %}
 
-        <!-- Title block allowing child pages to override -->
-        <title>{% block title %}The Food of Paradise{% endblock %}</title>
-
-        <!-- Styles -->
-        {{ "jquery.jscrollpane.custom.min.css" | asset_url | stylesheet_tag }}
-        {{ "bookblock.min.css" | asset_url | stylesheet_tag }}
-        {{ "custom.min.css" | asset_url | stylesheet_tag }}
-
-        <!-- Style block allowing child pages to inject their own styles -->
-        {% block styles %}{% endblock %}
-
-        <!-- Scripts -->
-        {{ "modernizr.custom.79639.min.js" | asset_url | script_tag }}
-
-    </head>
     <body>
-        <div id="wrapper">
-            <!-- Include -->
-            {% include "header" %}
-            <!-- Content block, child page inject content -->
-            {% block content %}{% endblock %}
-        </div>
-        <!-- Script block allowing child pages to inject their own scripts -->
-        {% block scripts %}{% endblock %}
+        <!-- Content block, child page inject content -->
+        {% block content %}{% endblock %}
 
-        <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-        {{ "jquery.mousewheel.min.js" | asset_url | script_tag }}
-        {{ "jquery.jscrollpane.min.js" | asset_url | script_tag }}
-        {{ "jquerypp.custom.min.js" | asset_url | script_tag }}
-        {{ "jquery.bookblock.min.js" | asset_url | script_tag }}
-        {{ "page.min.js" | asset_url | script_tag }}
-
-        <script>
-            $(function() {
-
-                Page.init();
-
-            });
-        </script>
-
+        {% include "structure/bottom-script-block" %}
     </body>
+
 </html>
