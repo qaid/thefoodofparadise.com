@@ -4,10 +4,10 @@
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": "assets",
-  "preprocessorScriptOutput": "assets/scripts",
+  "preprocessorScriptOutput": "assets/js",
   "preprocessorStyleOutput": "assets/css",
-  "projectDescription": "A simple empty boilerplate for a fresh start",
-  "projectName": "empty",
+  "projectDescription": "The Food of Paradise",
+  "projectName": "The Food of Paradise",
   "publishedId": null,
   "serverHostname": null,
   "serverPort": null,
@@ -16,5 +16,5 @@
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": false
+  "useCompass": true
 }
