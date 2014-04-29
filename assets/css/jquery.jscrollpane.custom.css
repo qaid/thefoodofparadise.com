@@ -50,13 +50,13 @@
 }
 
 .jspDrag {
-	background: #fff;
+	background: #afc69b;
 	position: relative;
 	box-shadow: inset -1px 0 8px rgba(0,0,0,0.05);
 	top: 0;
 	left: 0;
 	border-radius: 5px;
-	border: 1px solid #f0f0f0;
+	border: 1px solid #7DA25D;
 	cursor: pointer;
 }
 
