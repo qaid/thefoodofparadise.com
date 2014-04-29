@@ -298,12 +298,20 @@ a:hover {
 	.no-js .container {
 		padding: 0;
 	}
+
+	.scroller {
+		padding: 10px 5% 1em 5%;
+	}
 }
 
 @media screen and (max-width: 400px){
 	.menu-panel,
 	.content {
-		font-size: 75%;
+		font-size: 95%;
+	}
+
+	.scroller {
+		padding: 10px 2% 2em 2%;
 	}
 }
 
