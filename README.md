@@ -19,14 +19,10 @@ The design and functionality of TheFoodofParadise website was inspired by the tu
 [4]: http://qaidjacobs.com/retelling-an-ancient-tale-with-jquery/
 
 ## To Do
-~~**TASK:** Implement column splitting when media width exceeds certain amount. (Imagine trying to read this thing fullscreen on a 20+ inch monitor.)~~ 
+- [x]  Implement column splitting when media width exceeds certain amount. (Imagine trying to read this thing fullscreen on a 20+ inch monitor.)~~
 
-~~**TASK:** When Table of contents are viewed, reduce width of text displayed so that all of it is still visible.~~ (Not going to do this as it would reduce the effect experienced when the TOC comes into view, pushing the other content off screen.)
+- [x]  When Table of contents are viewed, reduce width of text displayed so that all of it is still visible.~~ (Not going to do this as it would reduce the effect experienced when the TOC comes into view, pushing the other content off screen.)
 
-~~**TASK:** To improve legibility, prevent the column from spanning more than 75 characters.~~
+- [x]  To improve legibility, prevent the column from spanning more than 75 characters.~~
 
-**TASK:** for super large displays, break copy into columns. Flexbox?
-
-
-
-
+- [ ] for super large displays, break copy into columns. Flexbox?
