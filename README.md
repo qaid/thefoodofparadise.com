@@ -20,12 +20,12 @@ The site that is live was built using the Mixture static site generate tool, whi
 [3]: https://github.com/codrops/BookBlock
 [4]: http://qaidjacobs.com/retelling-an-ancient-tale-with-jquery/
 
-## To Do
-- [x]  Implement column splitting when media width exceeds certain amount. (Imagine trying to read this thing fullscreen on a 20+ inch monitor.)~~
+## To Dos
+- [x] Implement column splitting when media width exceeds certain amount. (Imagine trying to read this thing fullscreen on a 20+ inch monitor.)
 
-- [x]  When Table of contents are viewed, reduce width of text displayed so that all of it is still visible.~~ (Not going to do this as it would reduce the effect experienced when the TOC comes into view, pushing the other content off screen.)
+- [x] When Table of contents are viewed, reduce width of text displayed so that all of it is still visible. (Not going to do this as it would reduce the effect experienced when the TOC comes into view, pushing the other content off screen.)
 
-- [x]  To improve legibility, prevent the column from spanning more than 75 characters.~~
+- [x] To improve legibility, prevent the column from spanning more than 75 characters.
 
 - [ ] for super large displays, break copy into columns. Flexbox?
 
