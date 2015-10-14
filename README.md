@@ -13,7 +13,7 @@ The effort turned into a major effort of literary creativity, which I have decid
 ## CoDrops Are The Bizness
 The design and functionality of TheFoodofParadise website was inspired by the tutorial at [Tympanus.net's Codrops site] [2], which uses the dope [BookBlock plugin repo'd here on Github] [3]. All respect due.
 
-The site that is live was built using the Mixture static site generate tool, which was all the rage at the time. Well, I don't know that Mixture the tool was all the rage, but static site generators were all the rage at the time. They're kind of still all the rage, but I think the field might have thinned a bit at this point (Fall, 2015). 
+The site that is live was built using the Mixture static site generate tool, which was all the rage at the time. Well, I don't know that Mixture the tool was all the rage, but static site generators were all the rage at the time. They're kind of still all the rage, but I think the field might have thinned a bit at this point (Fall, 2015).
 
 [1]: http://qaidjacobs.com/the-food-of-paradise/
 [2]: http://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/
@@ -28,3 +28,8 @@ The site that is live was built using the Mixture static site generate tool, whi
 - [x]  To improve legibility, prevent the column from spanning more than 75 characters.~~
 
 - [ ] for super large displays, break copy into columns. Flexbox?
+
+## Build note
+To publish to `gh-pages` branch from `master`:
+
+`$ git subtree push --prefix dist origin gh-pages`
