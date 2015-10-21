@@ -1,2 +1,2 @@
-custom.css
-.sass-cache/*
+*
+!dist
